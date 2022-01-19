@@ -4,9 +4,9 @@ To see this project:
 
 Clone project to your machine. \
 In the project directory run: `yarn install`.\
-and later: `yarn start`
-(I cannot give this app 'live version' cause gh pages throw this away cause of http instead of https endpoints).
+and later: `yarn start`\
 
+(I cannot give this app 'live version' by gh-pages cause gh pages throw this away cause of http instead of https endpoints).
 However, you can visit this page - [click](https://maksymilianmroz.github.io/product-list-management/). Except that you must allow 'insecure content' in your browser settings.
 
 Runs the app in the development mode.\
