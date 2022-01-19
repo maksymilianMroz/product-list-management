@@ -4,6 +4,7 @@ import {
   sendNewProductData,
   editProductData,
 } from "../../store/products-actions";
+import { productActions } from "../../store/products-slice";
 
 const d = new Date();
 const isoDate = d.toISOString();
@@ -48,6 +49,21 @@ const ProductsForm = () => {
     setCurrentDate(isoDate);
   };
 
+  const closeModalHandler = (event) => {
+    event.preventDefault();
+
+    setEnteredName("");
+    setQuantity(0);
+    setEnteredDescription("");
+    setEnteredEmail("");
+    setIsEnteredNameLengthValid(true);
+    setIsEnteredEmailValid(true);
+    setCurrentDate("");
+    setItemId("");
+
+    dispatch(productActions.editProductOff());
+  };
+
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
@@ -75,6 +91,8 @@ const ProductsForm = () => {
     setQuantity(0);
     setEnteredDescription("");
     setEnteredEmail("");
+    setCurrentDate("");
+    setItemId("");
 
     const newProduct = {
       name: enteredName,
@@ -99,6 +117,8 @@ const ProductsForm = () => {
       setQuantity(0);
       setEnteredDescription("");
       setEnteredEmail("");
+      setCurrentDate("");
+      setItemId("");
       return;
     }
 
@@ -106,7 +126,9 @@ const ProductsForm = () => {
   };
 
   useEffect(() => {
+    console.log(editableProduct);
     const { id, name, quantity, description, email } = editableProduct;
+
     setItemId(id);
     setEnteredName(name);
     setQuantity(quantity);
@@ -173,7 +195,13 @@ const ProductsForm = () => {
       </div>
       <div className="form-actions">
         <button className="form-actions-btn">Submit</button>
-        <button className="form-actions-cancel-btn">Cancel</button>
+        <button
+          className="form-actions-cancel-btn"
+          onClick={closeModalHandler}
+          type="reset"
+        >
+          Cancel
+        </button>
       </div>
     </form>
   );

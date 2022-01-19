@@ -101,7 +101,7 @@ const ProductsTable = () => {
   };
 
   const addNewProductHandler = () => {
-    console.log("New product");
+    dispatch(productActions.showModal());
   };
 
   return (
@@ -209,7 +209,7 @@ const ProductsTable = () => {
           {">>"}
         </button>{" "}
         <button onClick={removeProductHandler} className="delete-btn">
-          Delete Product
+          Delete Product/s
         </button>{" "}
         <button onClick={editProductHandler} className="edit-btn">
           Edit Product

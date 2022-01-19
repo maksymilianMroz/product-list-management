@@ -10,6 +10,7 @@ const App = () => {
   const dispatch = useDispatch();
   const areLoaded = useSelector((state) => state.products.areLoaded);
   const areReloading = useSelector((state) => state.products.areReloading);
+  const isModalShow = useSelector((state) => state.products.isModalShow);
 
   useEffect(() => {
     dispatch(fetchProductsData());
@@ -22,8 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="table-container">{areLoaded && <ProductsTable />}</div>
-
-      <ProductsForm />
+      {isModalShow && <ProductsForm />}
     </div>
   );
 };
