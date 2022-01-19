@@ -126,7 +126,6 @@ const ProductsForm = () => {
   };
 
   useEffect(() => {
-    console.log(editableProduct);
     const { id, name, quantity, description, email } = editableProduct;
 
     setItemId(id);

@@ -1,6 +1,6 @@
 # Getting Started!
 
-You can see this project [here](https://maksymilianmroz.github.io/Watchify/).
+You can see this project [here](https://maksymilianMroz.github.io/product-list-management).
 
 Or you can clone project to your machine. \
 In the project directory, you can run: `yarn install`.\
