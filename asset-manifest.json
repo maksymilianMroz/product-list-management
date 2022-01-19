@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/product-list-management/static/css/main.77951209.chunk.css",
+    "main.js": "/product-list-management/static/js/main.c1218261.chunk.js",
+    "main.js.map": "/product-list-management/static/js/main.c1218261.chunk.js.map",
+    "runtime~main.js": "/product-list-management/static/js/runtime~main.3c2368d5.js",
+    "runtime~main.js.map": "/product-list-management/static/js/runtime~main.3c2368d5.js.map",
+    "static/js/2.eccf45a3.chunk.js": "/product-list-management/static/js/2.eccf45a3.chunk.js",
+    "static/js/2.eccf45a3.chunk.js.map": "/product-list-management/static/js/2.eccf45a3.chunk.js.map",
+    "index.html": "/product-list-management/index.html",
+    "precache-manifest.c11c00f63c4f8054670e04cb65c839a4.js": "/product-list-management/precache-manifest.c11c00f63c4f8054670e04cb65c839a4.js",
+    "service-worker.js": "/product-list-management/service-worker.js",
+    "static/css/main.77951209.chunk.css.map": "/product-list-management/static/css/main.77951209.chunk.css.map"
+  }
+}
