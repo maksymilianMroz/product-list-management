@@ -5,7 +5,7 @@ To see this project:
 Clone project to your machine. \
 In the project directory run: `yarn install`.\
 and later: `yarn start`
-(I cannot give this app 'live version' cause gh pages throw this away cause of http instead of https endpoints
+(I cannot give this app 'live version' cause gh pages throw this away cause of http instead of https endpoints).
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
