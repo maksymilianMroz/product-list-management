@@ -1,0 +1,104 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 14px 8px;
+  border: none;
+}
+
+table tr {
+  border-bottom: 2px solid #1c2e96;
+}
+
+table tr:nth-child(even){
+  background-color: #dbe4f2;
+}
+
+table tr:hover {
+  background-color: #1c2e96; 
+  color: #fff; 
+}
+
+table tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+table tr td:nth-child(3) {
+  color: rgb(162, 8, 98);
+  font-weight: bold;
+}
+
+
+table th, tfoot td {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: left;
+  background-color: #1c2e96;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+table th:nth-child(1) {
+  border-radius: 15px 0 0 0;
+}
+table th:nth-child(7) {
+  border-radius: 0 15px 0 0;
+}
+
+.global-filter {
+  display: inline-block;
+  margin: 20px;
+  padding: 2px 8px;
+}
+
+.global-filter .global-filter-input {
+  border-radius: 15px;
+  min-width: 250px;
+  margin-left: 13px;
+  border: 2px solid rgb(192, 192, 192);
+}
+
+.column-filter {
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.column-filter .column-filter-input {
+  border-radius: 15px;
+  margin-left: 13px;
+  border: 2px solid rgb(192, 192, 192);
+}
+
+.options-bar {
+  padding: 18px;
+}
+
+.first-btn, .prev-btn, .next-btn, .last-btn, .delete-btn, .go-to-page, .how-many-products, .edit-btn, .add-new-btn {
+  margin: 4px;
+  padding: 2px 8px;
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 15px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-btn, .edit-btn, .add-new-btn {
+  background-color: #1c2e96;
+  color: #fff;
+  border: 6px solid #1c2e96;
+}
+
+.first-btn:hover, .prev-btn:hover, .next-btn:hover, .last-btn:hover {
+  background-color: #1c2e96;
+  color: #fff;
+  border: 2px solid #1c2e96;
+}
+
+
